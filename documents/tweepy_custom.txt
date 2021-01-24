@@ -1,0 +1,73 @@
+import tweepy
+import pandas as pd
+import credentials
+
+
+class TwitterAuth:
+    auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret_key)
+    auth.set_access_token(credentials.access_token, credentials.secret_token)
+    api = tweepy.API(auth)
+
+
+class MyStreamListener(tweepy.StreamListener):
+
+    def __init__(self, filename):
+        self.filename = filename
+
+    def on_data(self, data):
+        print(data.text)
+        with open(self.filename, 'a') as f:
+            f.write(data)
+
+    def on_status(self, status):
+        print(status.text)
+        if status == 420:
+            return False
+
+
+class TwitterClient:
+    def __init__(self):
+        auth = TwitterAuth
+        self.auth = auth.auth
+        self.api = auth.api
+
+    def search(self, query, count=10, loc=None):
+        if loc is None:
+            loc = [-12.3046875, 50.064191736659104, 2.197265625, 50.064191736659104]
+        searchresult = self.api.search(q=query, count=count, tweet_mode='extended', location=loc,until='2021-01-21')
+        # returns tweepy.model.searchresults
+        return searchresult
+
+    def search_cursor(self, query, count=10):
+        for status in tweepy.Cursor(self.api.search, query).items(count):
+            if 'retweeted_status' in dir(status):
+                text = status.retweeted_status.text
+            else:
+                text = status.text
+
+
+def convert_df(searchresults):
+    df = pd.DataFrame()
+    df['text'] = [getfull_text(status) for status in searchresults]
+    df['retweet_count'] = [status.retweet_count for status in searchresults]
+    df['favorite_count'] = [status.favorite_count for status in searchresults]
+    df['created_at'] = [status.created_at for status in searchresults]
+    return df
+
+
+def getfull_text(status):
+    if 'retweeted_status' in dir(status):
+        full_text = status.retweeted_status.full_text
+    else:
+        full_text = status.full_text
+    return full_text
+
+
+if __name__ == '__main__':
+    tc = TwitterClient()
+    results = tc.search('MAFSA', 1)
+
+    data_frame = convert_df(results)
+    print(data_frame["text"])
+
+    # df = convert_df(search_results)
