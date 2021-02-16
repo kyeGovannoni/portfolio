@@ -14259,13 +14259,14 @@ a.anchor-link {
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[122]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
 </pre></div>
 
      </div>
@@ -14276,7 +14277,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[123]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;clean_data.csv&#39;</span><span class="p">)</span>
@@ -14299,7 +14300,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[124]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#grouping to get sample means</span>
@@ -14315,7 +14316,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[125]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -14368,12 +14369,12 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Distribution-of-samples">Distribution of samples<a class="anchor-link" href="#Distribution-of-samples">&#182;</a></h2>
+<h1 id="Estimating-the-Expected-Value-of-AveragePrice">Estimating the Expected Value of AveragePrice<a class="anchor-link" href="#Estimating-the-Expected-Value-of-AveragePrice">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[131]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">type_</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;conventional&#39;</span><span class="p">,</span><span class="s1">&#39;organic&#39;</span><span class="p">]</span>
@@ -14390,10 +14391,15 @@ a.anchor-link {
 </div>
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Distribution-of-Sub-Groups-from-each-Sub-Population">Distribution of Sub Groups from each Sub Population<a class="anchor-link" href="#Distribution-of-Sub-Groups-from-each-Sub-Population">&#182;</a></h2>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[226]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">col</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">]</span>
@@ -14452,7 +14458,99 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Estimating-the-true-population-Expected-Value-for-AveragePrice-parameter">Estimating the true population Expected Value for AveragePrice parameter<a class="anchor-link" href="#Estimating-the-true-population-Expected-Value-for-AveragePrice-parameter">&#182;</a></h2>
+<h2 id="Stratified-Random-Sampling">Stratified Random Sampling<a class="anchor-link" href="#Stratified-Random-Sampling">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[141]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[141]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2017    5722
+2016    5616
+2015    5615
+2018    1296
+Name: year, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>it appears that there is less data to represent 2018, our sample will need to adjust for this as i want equal proportions of the subgroups.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[227]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">_2015_sample</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2015</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;conventional&#39;</span><span class="p">)),</span><span class="s1">&#39;AveragePrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">_2015_sample</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2016</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;conventional&#39;</span><span class="p">)),</span><span class="s1">&#39;AveragePrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">_2017_sample</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2017</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;conventional&#39;</span><span class="p">)),</span><span class="s1">&#39;AveragePrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">_2018_sample</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2018</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;conventional&#39;</span><span class="p">)),</span><span class="s1">&#39;AveragePrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">_2015_sample2</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2015</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;organic&#39;</span><span class="p">)),</span><span class="s1">&#39;AveragePrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">_2015_sample2</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2016</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;organic&#39;</span><span class="p">)),</span><span class="s1">&#39;AveragePrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">_2017_sample2</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2017</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;organic&#39;</span><span class="p">)),</span><span class="s1">&#39;AveragePrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">_2018_sample2</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2018</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;organic&#39;</span><span class="p">)),</span><span class="s1">&#39;AveragePrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Estimating-E(X)-AveragePrice-for-sub-populations-organic-and-conventional">Estimating E(X) AveragePrice for sub populations organic and conventional<a class="anchor-link" href="#Estimating-E(X)-AveragePrice-for-sub-populations-organic-and-conventional">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14464,20 +14562,29 @@ a.anchor-link {
 <p>99% of all the means are within $3\sigma$ of $ \mu_\bar{X}$ or $E(X)$</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[229]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Sample means </span>
-<span class="n">means</span> <span class="o">=</span><span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="n">samples</span><span class="p">[</span><span class="n">s</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">samples</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
-<span class="n">n</span> <span class="o">=</span> <span class="p">[</span><span class="n">samples</span><span class="p">[</span><span class="n">s</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">samples</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
-<span class="n">sample_std</span> <span class="o">=</span> <span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(((</span><span class="n">samples</span><span class="p">[</span><span class="n">s</span><span class="p">]</span><span class="o">-</span><span class="n">samples</span><span class="p">[</span><span class="n">s</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="n">samples</span><span class="p">[</span><span class="n">s</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">)),</span><span class="mi">3</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">samples</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#sample 1 statistics.</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">_2015_sample</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_2015_sample</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_2017_sample</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_2018_sample</span><span class="p">)))</span>
+<span class="n">x1_mean</span> <span class="o">=</span> <span class="n">x1</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">x1_n</span> <span class="o">=</span> <span class="n">x1</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(((</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x1_mean</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="n">x1_n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+<span class="c1">#sample1 estimation</span>
+<span class="n">est_std_xbar</span> <span class="o">=</span> <span class="n">s1</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x1_n</span><span class="p">))</span>
+<span class="n">_99confidance</span> <span class="o">=</span> <span class="n">est_std_xbar</span><span class="o">*</span><span class="mi">3</span>
 
-<span class="n">values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">means</span><span class="p">,</span><span class="n">sample_std</span><span class="p">,</span><span class="n">n</span><span class="p">))</span>
-<span class="n">sample_statistics</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">values</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">samples</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;xbar&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">])</span>
-<span class="n">sample_statistics</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="c1">#sample 2 statistics.</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">_2015_sample2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_2015_sample2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_2017_sample2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_2018_sample2</span><span class="p">)))</span>
+<span class="n">x2_mean</span> <span class="o">=</span> <span class="n">x2</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">x2_n</span> <span class="o">=</span> <span class="n">x2</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(((</span><span class="n">x2</span> <span class="o">-</span> <span class="n">x2_mean</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="n">x2_n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+<span class="c1">#sample 2 estimations.</span>
+<span class="n">est_std_xbar2</span> <span class="o">=</span> <span class="n">s2</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x2_n</span><span class="p">))</span>
+<span class="n">_99confidance2</span> <span class="o">=</span> <span class="n">est_std_xbar2</span><span class="o">*</span><span class="mi">3</span>
 </pre></div>
 
      </div>
@@ -14485,192 +14592,14 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>xbar</th>
-      <th>s</th>
-      <th>n</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2015 conventional</th>
-      <td>1.08</td>
-      <td>0.170</td>
-      <td>2808</td>
-    </tr>
-    <tr>
-      <th>2015 organic</th>
-      <td>1.67</td>
-      <td>0.276</td>
-      <td>2807</td>
-    </tr>
-    <tr>
-      <th>2016 conventional</th>
-      <td>1.11</td>
-      <td>0.254</td>
-      <td>2808</td>
-    </tr>
-    <tr>
-      <th>2016 organic</th>
-      <td>1.57</td>
-      <td>0.370</td>
-      <td>2808</td>
-    </tr>
-    <tr>
-      <th>2017 conventional</th>
-      <td>1.29</td>
-      <td>0.302</td>
-      <td>2862</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[230]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample_statistics</span><span class="p">[</span><span class="s1">&#39;$3\sigma_xbar$&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">sample_statistics</span><span class="p">[</span><span class="s1">&#39;s&#39;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">sample_statistics</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">])))</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">sample_statistics</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>xbar</th>
-      <th>s</th>
-      <th>n</th>
-      <th>$3\sigma_xbar$</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2015 conventional</th>
-      <td>1.08</td>
-      <td>0.170</td>
-      <td>2808</td>
-      <td>0.010</td>
-    </tr>
-    <tr>
-      <th>2015 organic</th>
-      <td>1.67</td>
-      <td>0.276</td>
-      <td>2807</td>
-      <td>0.016</td>
-    </tr>
-    <tr>
-      <th>2016 conventional</th>
-      <td>1.11</td>
-      <td>0.254</td>
-      <td>2808</td>
-      <td>0.014</td>
-    </tr>
-    <tr>
-      <th>2016 organic</th>
-      <td>1.57</td>
-      <td>0.370</td>
-      <td>2808</td>
-      <td>0.021</td>
-    </tr>
-    <tr>
-      <th>2017 conventional</th>
-      <td>1.29</td>
-      <td>0.302</td>
-      <td>2862</td>
-      <td>0.017</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">sample_statistics</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;With 99</span><span class="si">% c</span><span class="s1">onfidence, the Expected Value for the mean AveragePrice of&#39;</span><span class="p">,</span><span class="n">sample_statistics</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">5</span><span class="p">:],</span><span class="s1">&#39;avocados in&#39;</span><span class="p">,</span><span class="n">sample_statistics</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span><span class="s1">&#39;is within +/-&#39;</span><span class="p">,</span><span class="n">sample_statistics</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="s1">&#39;cents of $&#39;</span><span class="p">,</span><span class="n">sample_statistics</span><span class="o">.</span><span class="n">xbar</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;99</span><span class="si">% c</span><span class="s1">onf. That the Expected Value of Average Price, for conventional avocados is between $&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">x1_mean</span> <span class="o">-</span><span class="n">_99confidance</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;and $&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">x1_mean</span> <span class="o">+</span><span class="n">_99confidance</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;99</span><span class="si">% c</span><span class="s1">onf. That the Expected Value of Average Price, for organic avocados is between $&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">x2_mean</span> <span class="o">-</span><span class="n">_99confidance2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;and $&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">x2_mean</span> <span class="o">+</span><span class="n">_99confidance2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -14690,30 +14619,8 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>With 99% confidence, the Expected Value for the mean AveragePrice of conventional avocados in 2015 is within +/- 0.01 cents of $ 1.08
-
-
-With 99% confidence, the Expected Value for the mean AveragePrice of organic avocados in 2015 is within +/- 0.016 cents of $ 1.67
-
-
-With 99% confidence, the Expected Value for the mean AveragePrice of conventional avocados in 2016 is within +/- 0.014 cents of $ 1.11
-
-
-With 99% confidence, the Expected Value for the mean AveragePrice of organic avocados in 2016 is within +/- 0.021 cents of $ 1.57
-
-
-With 99% confidence, the Expected Value for the mean AveragePrice of conventional avocados in 2017 is within +/- 0.017 cents of $ 1.29
-
-
-With 99% confidence, the Expected Value for the mean AveragePrice of organic avocados in 2017 is within +/- 0.024 cents of $ 1.74
-
-
-With 99% confidence, the Expected Value for the mean AveragePrice of conventional avocados in 2018 is within +/- 0.024 cents of $ 1.13
-
-
-With 99% confidence, the Expected Value for the mean AveragePrice of organic avocados in 2018 is within +/- 0.026 cents of $ 1.57
-
-
+<pre>99% conf. That the Expected Value of Average Price, for conventional avocados is between $ 1.14 and $ 1.18
+99% conf. That the Expected Value of Average Price, for organic avocados is between $ 1.6 and $ 1.64
 </pre>
 </div>
 </div>
